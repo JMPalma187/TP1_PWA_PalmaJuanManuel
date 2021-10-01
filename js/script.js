@@ -132,9 +132,9 @@ function showCoordinates(coord){
     var esp = moment().locale('es-mx');*/
     let i;
     let futureWeatherCreator = "" ;
-    for (i = 1; i < 7; i++) {          
+    for (i = 1; i < 6; i++) {          
       futureWeatherCreator+=`
-          <div class="col-10 col-md-3 offset-1 weather-forecast-item">                
+          <div class="col-10 col-md-2 offset-1 weather-forecast-item">                
             <div class="title-forecast-day">${window.moment(daily[i].dt*1000).format('dddd')}</div>
             <img src="https://openweathermap.org/img/wn/${daily[i].weather[0].icon}@2x.png" alt="El clima va a estar ${daily[i].weather[0].description}" class="w-icon">
             <div class="temp">Térmica: <b>${daily[i].feels_like.day}&#176; C</b></div>

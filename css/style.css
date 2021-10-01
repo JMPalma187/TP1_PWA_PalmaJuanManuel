@@ -105,6 +105,10 @@ input[type=text]
     margin: 10px 0;
 }
 
+.h3-title{
+    text-align: center;
+}
+
 .future-forecast{
     border-radius: 15px;
     background: rgba(152, 193, 217, 0.3); 
@@ -137,6 +141,7 @@ input[type=text]
     padding-bottom: 56.25%;
     padding-top: 30px;
     position: relative;
+    border-radius: 15px;
 }
 #Media iframe, object, embed {
     height: 100%;
