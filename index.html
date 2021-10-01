@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                
+        <link rel="StyleSheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/all.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" />
+        <title>Juan Manuel Palma | PWA</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row current-info-head">
+                <div class="col-12 col-md-4 place-container">
+                    <div class="time" id="time">
+                        --:--
+                    </div>
+                    <div class="date" id="date">
+                        Cargando día...
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 place-container">
+                    <h1 class="h1-title">WeaThor</h1>
+                    <h2 class="h2-subtitle">La app oficial de Thor para manejar los truenos</h2>
+                </div>                                   
+                <div class="col-12 col-md-4 place-container">
+                    <div class="time-zone" id="time-zone">Ciudad</div>
+                    <div id="country" class="country">--</div>            
+                </div>
+            </div> 
+            <br>       
+            <div class="contact-form">
+                <form id="contact-form" class="row formulariobusqueda">
+                    <div class="input-group mb-3">
+                            <input type="Search" id="search" type="text" required class="form-control" placeholder="Buscá una ciudad" aria-label="Buscá una ciudad" aria-describedby="basic-addon2">                        
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto text-center">
+                            <button id="sendButton" type="button" class="btn btn-search">Buscar</button>   
+                        </div>        
+                </form>
+            </div>
+        </div>
+
+        <section>  
+            <div class="container current-info">   
+                    <div class="row others">
+                        <div id="weather-icon" class="col-12 text-center">
+                            --
+                        </div>
+                        <div class="col-12 text-center day">Hoy</div>
+                        <div class="col-12 col-md-6 text-center weather-item" id="current-temp">                            
+                                <div>Térmica: </div>
+                                <div><b>--&#176; C</b></div>
+                                <div>Máxima:</div>
+                                <div><b>--&#176; C</b></div>
+                                <div>Míninma:</div>
+                                <div><b>--&#176; C</b></div>                    
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                                <div id="current-weather-items">
+                                    <div class="weather-item">
+                                        <div>Húmedad: </div>
+                                        <div><b> --%</b></div>
+                                    </div>
+                                    <div class="weather-item">
+                                       <div>Presión: </div>
+                                       <div><b> -- hPA</b></div>
+                                    </div>
+                                </div>  
+                                <div class="weather-item">
+                                        <div>Vel. Viento: </div>
+                                        <div id="wind-speed"><b> --KM/h</b></div>
+                                </div>
+                            </div>                          
+                    </div>
+            </div>
+        </section>
+            <div class="container future-forecast">                
+                <div class="row weather-forecast" id="weather-forecast">              
+                </div>
+            </div>
+        <section id="Media" class="container">
+            <div id="get-map" class="row">
+            </div>                
+        </section>                     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js" integrity="sha512-Qy4cmZ6v7vnVEc0cn/BIj9q15eB98do4hMvu8xtc/H+v+YYpdpDrB35flHS3NPLbZUpe1npSYY/u+Gi3UB61vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="js/jquery-3.5.1.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/animaScroll.js"></script>
+      <script src="js/script.js"></script> 
+    </body>
+</html>

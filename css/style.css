@@ -1,0 +1,175 @@
+/*
+Paleta de colores: https://coolors.co/98c1d9-6969b3-533a7b-4b244a-25171a
+#98C1D9, #6969B3, #533A7B, #4B244A, #25171A.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+}
+
+body{    
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/background.jpg') fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+input[type=text]
+{
+    color: #353535;
+    width: 500px;
+    height: 30px;    
+    padding-left: 10px;
+    text-decoration: none;    
+    border-radius: 5px;
+    border: 0;
+}
+
+.btn-search{
+    border-radius: 5px;
+    border: 0;
+    color:#f7f7f7;
+    background-color: #6969B3;
+    font-size: 1em;    
+}
+
+.btn-search:hover{
+    border-radius: 5px;
+    border: 0;
+    color:#f7f7f7;    
+    background-color: #4B244A;
+    font-size: 1em;    
+}
+
+.container{
+    padding: 20px 70px;
+    color: #fff;
+}
+
+.current-info-head{
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: inset rgba(255, 255, 255, 0.87);
+}
+
+.date-container .time{
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.date-container .date{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.h1-title{
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.h2-subtitle{
+    color: #f7f7f7;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.place-container{
+    text-align: center;
+}
+
+.place-container .time-zone{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.place-container .country{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.current-info{
+    background: rgba(37, 23, 26, 0.7);
+    border-radius: 15px;
+    padding-bottom: 2.5em;
+}
+
+.weather-item div{
+    font-weight: 200;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.future-forecast{
+    border-radius: 15px;
+    background: rgba(152, 193, 217, 0.3); 
+}
+
+.weather-forecast-item{
+    padding: 10px;
+    margin: 15px;
+    border-style: none inset;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.title-forecast-day{
+    border-style: none none inset none;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;    
+    text-align: center;    
+    padding: 10px;    
+}
+
+#Media {
+    text-align: center;    
+    margin: auto;   
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+#Media iframe, object, embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+
+
+@media screen and (min-width: 768px){
+
+.place-container .time{
+        font-size: 40px;
+        font-weight: 100;
+        text-align: left;
+        
+    }
+    
+.place-container .date{
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+    }    
+
+.place-container{
+    text-align: right;
+}
+
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+  
+}
